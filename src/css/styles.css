@@ -1,0 +1,191 @@
+
+/* Common styles */
+@import url('./reset.css');
+
+/*--------------------------форма--------------------------*/
+.form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  
+  .input-form{
+  outline: none;
+  width: 272px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+  margin-right: 8px;
+  }
+  
+  .input-form:hover{
+    border: 1px solid #000000;
+  }
+  
+  .input-form:focus{
+    border: 1px solid #4E75FF;
+  }
+  
+  input::placeholder {
+    color: #808080;
+    padding-left: 16px;
+  }
+  
+  .input-btn{
+  width: 91px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  background-color: #4E75FF;
+  align-items: center;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFFFFF;
+    }
+  
+    .input-btn:hover{
+      background-color: #6C8CFF;
+    }
+
+/*--------------------------лоадер перед загр бібліотеки--------------------------*/
+    .loader {
+        margin-top: 1px;
+        position: absolute; /* Абсолютне позиціонування */
+        top: 50%; /* Переміщуємо вниз на 50% висоти контейнера */
+        left: 50%; /* Переміщуємо вправо на 50% ширини контейнера */
+        transform: translate(-50%, -50%) rotateZ(45deg); /* Центруємо і обертаємо */
+        perspective: 1000px;
+        border-radius: 50%;
+        width: 96px;
+        height: 96px;
+        color: yellow;
+      }
+        .loader:before,
+        .loader:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+          transform: rotateX(70deg);
+          animation: 1s spin linear infinite;
+        }
+        .loader:after {
+          color: blue;
+          transform: rotateY(70deg);
+          animation-delay: .4s;
+        }
+    
+      @keyframes rotate {
+        0% {
+          transform: translate(-50%, -50%) rotateZ(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotateZ(360deg);
+        }
+      }
+    
+      @keyframes rotateccw {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg);
+        }
+      }
+    
+      @keyframes spin {
+        0%,
+        100% {
+          box-shadow: .2em 0px 0 0px currentcolor;
+        }
+        12% {
+          box-shadow: .2em .2em 0 0 currentcolor;
+        }
+        25% {
+          box-shadow: 0 .2em 0 0px currentcolor;
+        }
+        37% {
+          box-shadow: -.2em .2em 0 0 currentcolor;
+        }
+        50% {
+          box-shadow: -.2em 0 0 0 currentcolor;
+        }
+        62% {
+          box-shadow: -.2em -.2em 0 0 currentcolor;
+        }
+        75% {
+          box-shadow: 0px -.2em 0 0 currentcolor;
+        }
+        87% {
+          box-shadow: .2em -.2em 0 0 currentcolor;
+        }
+      }
+
+/*--------------------------оформлення бібліотеки--------------------------*/
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        max-width: 1128px;
+        margin: 0 auto;
+      }
+    
+      .gallery-item {
+        width: 360px;
+        height: 200px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #808080;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .gallery-image {
+        width: 360px;
+        height: 152px;
+        object-fit: cover;
+        /* border-radius: 4px; */
+      }
+      
+      .info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 4px;
+        font-size: 14px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      
+      .info-item {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 4%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #2E2F42;
+        margin-bottom: 20px;
+      }
+    
+      .info-item-total{
+        font-weight: 600;
+        line-height: 16px;
+      }
