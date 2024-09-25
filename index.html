@@ -5,11 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-12</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5ObWk2rO.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-CvS1BN5D.css">
   </head>
   <body>
-
+    <form class="form">      
+      <input type="text" class="input-form" name="query" placeholder="Search images..." required/>
+      <button type="submit" class="input-btn">Search</button>
+    </form>
+   <div class="container">
+    <div class="loader" style="display: none">
+      <!-- Loading images, please wait... -->
+    </div>
+  </div>
+    <ul class="gallery"></ul>
 
   </body>
 </html>
