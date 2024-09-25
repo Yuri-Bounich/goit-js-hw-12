@@ -55,6 +55,16 @@
       background-color: #6C8CFF;
     }
 
+/*--------------------------нижня кнопка--------------------------*/
+    .btn{
+        width: 125px;
+      }
+
+.loader-next{
+    display: flex;
+    justify-content: center;
+}
+
 /*--------------------------лоадер перед загр бібліотеки--------------------------*/
     .loader {
         margin-top: 1px;
@@ -141,6 +151,7 @@
         gap: 24px;
         max-width: 1128px;
         margin: 0 auto;
+        margin-bottom: 32px;
       }
     
       .gallery-item {

@@ -1,4 +1,3 @@
-import axios from 'axios';
 
 // Описаний у документації
 import iziToast from "izitoast";
@@ -18,6 +17,14 @@ const galleryElement = document.querySelector('.gallery');
 const gallery = new SimpleLightbox('.gallery a', { 
     captionsData: 'alt',
     captionDelay: 250, });
+
+// const fetchPostsBtn = document.querySelector(".btn");
+// // const postList = document.querySelector(".posts");
+    
+// // Controls the group number
+// let page = 1;
+// // Controls the number of items in the group
+// let perPage = 10;
 
 searchForm.addEventListener('submit', event => {
     //Запобігає перезавантаженню сторінки
