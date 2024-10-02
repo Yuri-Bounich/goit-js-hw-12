@@ -1,7 +1,6 @@
 
-export const renderImages = images => {
+export const renderImages = (images, page) => {
     const gallery = document.querySelector('.gallery');
-    gallery.innerHTML = '';
   
     if (images.length === 0) {
       iziToast.error({
@@ -22,10 +21,11 @@ export const renderImages = images => {
           views,
           comments,
           downloads,
-        }) => `
+        }, index) => 
+          `
               <li class="gallery-item">
                   <a href="${largeImageURL}" class="gallery-link">
-                      <img src="${webformatURL}" alt="${tags}" class="gallery-image" />
+                      <img src="${webformatURL}" alt="${tags}" class="gallery-image" id="image-${page}-${index}"/>
                   </a>
                   <div class="info">
                       <p class="info-item"><span class="info-item-total">Likes</span> ${likes}</p>
@@ -38,15 +38,28 @@ export const renderImages = images => {
       )
       .join('');
   
-    gallery.innerHTML = markup;
+      gallery.insertAdjacentHTML('beforeend', markup);
+      // gallery.innerHTML += markup;
+    // gallery.innerHTML = markup;
   };
   
   export const showLoader = () => {
     const loader = document.querySelector('.loader');
     loader.style.display = 'block';
+    
+  };
+
+  export const showLoaderNext = () => {
+    const loaderNext = document.querySelector('.loader-next');
+    loaderNext.style.display = 'flex';
   };
   
   export const hideLoader = () => {
     const loader = document.querySelector('.loader');
     loader.style.display = 'none';
+  };
+
+  export const hideLoaderNext = () => {
+    const loaderNext = document.querySelector('.loader-next');
+    loaderNext.style.display = 'none';
   };
