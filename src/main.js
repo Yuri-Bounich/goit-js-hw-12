@@ -106,6 +106,7 @@ searchForm.addEventListener('submit', event => {
   
   if (!query) return;
 
+   // Скидаємо галерею та сторінку при новому запиті
   galleryElement.innerHTML = ''; // Очищуємо попередні результати тільки при новому запиті
   page = 1; // Скидаємо сторінку при новому запиті
 
@@ -113,9 +114,10 @@ searchForm.addEventListener('submit', event => {
   
   fetchImages(query, page)
     .then(images => {
+      page += 1; // Збільшуємо сторінку після завантаження
       renderImages(images);
       gallery.refresh();
-      page += 1; // Збільшуємо сторінку після завантаження
+    
     })
     .catch(error => {
       console.error(error);
@@ -129,15 +131,24 @@ searchForm.addEventListener('submit', event => {
       showLoaderNext(); 
     });
   
-  searchForm.reset();
+  searchForm.reset(); // Очищення поля вводу після подачі форми
 });
 
 fetchNextImagesBtn.addEventListener('click', async () => {
+  page += 1; 
   try {
     const images = await fetchImages(query, page);
+
+    if (images.length === 0) {
+      return iziToast.error({
+          title: 'Error',
+          message: 'No more images to load.',
+      });
+  }
+    // Додаємо отримані зображення в галерею
     renderImages(images);
     gallery.refresh();
-    page += 1; 
+
      
     // Отримати висоту першої картки галереї
     const firstCard = document.querySelector('.gallery-item');
@@ -158,3 +169,4 @@ fetchNextImagesBtn.addEventListener('click', async () => {
 });
 
 // galleryElement.innerHTML = ''; // Очищуємо попередні результати
+ 
