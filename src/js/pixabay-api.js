@@ -1,28 +1,12 @@
-// import axios from 'axios';
-// const API_KEY = '46054867-15d582c16d4d1b2cce4772636'
-// const BASE_URL = 'https://pixabay.com/api/'
-
-// async function fetchImages(params = {}) {
-//   const options = new URLSearchParams(params);
-//   const url = {};
-
-//   const data = await axios.get(url,options)
-// }
-
-
-
-
-
 
 import { hideLoaderNext } from './render-functions';
 import axios from 'axios';
 const API_KEY = '46054867-15d582c16d4d1b2cce4772636'
 const BASE_URL = 'https://pixabay.com/api/'
 axios.defaults.baseURL = BASE_URL; 
-let page = 1;
 let perPage = 15;
 
-  export const fetchImages = async query => {
+  export const fetchImages = async (query, page) => {
     try {
         const params = new URLSearchParams({
             per_page: perPage,
