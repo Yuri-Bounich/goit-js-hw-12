@@ -52,9 +52,10 @@ searchForm.addEventListener('submit', event => {
 });
 
 fetchNextImagesBtn.addEventListener('click', async () => {
-  page += 1; 
+  // Показуємо лоадер перед запитом
+  showLoader();
   try {
-    const images = await fetchImages(query, page);
+    const images = await fetchImages(query, page); // Використовуємо поточну сторінку
 
     if (images.length === 0) {
       return iziToast.error({
@@ -65,8 +66,8 @@ fetchNextImagesBtn.addEventListener('click', async () => {
     // Додаємо отримані зображення в галерею
     renderImages(images);
     gallery.refresh();
-
-     
+    // Збільшуємо сторінку після завантаження
+    page += 1; 
     // Отримати висоту першої картки галереї
     const firstCard = document.querySelector('.gallery-item');
     if (firstCard) {
@@ -81,9 +82,9 @@ fetchNextImagesBtn.addEventListener('click', async () => {
   } catch (error) {
     console.log(error);
   } finally {
+    // Приховуємо лоадер після завершення запиту
     hideLoader(); 
   }
 });
 
 // galleryElement.innerHTML = ''; // Очищуємо попередні результати
- 
