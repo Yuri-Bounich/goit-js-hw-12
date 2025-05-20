@@ -59,14 +59,21 @@ Gallery Example
 
 `params: {`
 
-`key: 'your-api-key',  
-q: query,  
-image_type: 'photo',  
-orientation: 'horizontal',  
-safesearch: true,  
-page,  
-per_page: 15,  
-}, 
+`  key: 'your-api-key',`
+
+`  q: query,`
+
+`  image_type: 'photo',`
+
+`  orientation: 'horizontal',`
+
+`  safesearch: true,`
+
+`  page,`
+
+`  per_page: 15,` 
+
+`}, 
 });  
 return response.data;  
 }`
