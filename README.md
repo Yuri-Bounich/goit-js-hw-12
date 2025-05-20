@@ -54,7 +54,7 @@ javascript
 
 // API request example
 
-  async function fetchImages(query, page = 1) {
+    async function fetchImages(query, page = 1) {
   
     const response = await axios.get('https://pixabay.com/api/', {
   
@@ -76,22 +76,24 @@ javascript
     
     },
   
-  });
+   });
   
     return response.data;
 
-  }
+   }
 
 # 🚀 Installation & Setup
 1. Clone repository:
+   
  bash
+ 
 git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git
 
-2. Install dependencies:
+3. Install dependencies:
 bash
 npm install
 
-3. Run project:
+4. Run project:
 
 bash
 
