@@ -53,7 +53,8 @@ Gallery Example
 
 // API request example
 
-`async function fetchImages(query, page = 1) {  const response = await axios.get('https://pixabay.com/api/', {  
+`async function fetchImages(query, page = 1) {`
+`const response = await axios.get('https://pixabay.com/api/', {  
 params: {  
 key: 'your-api-key',  
 q: query,  
