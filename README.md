@@ -55,33 +55,20 @@ Gallery Example
 
 `code`
 
-`    `async function fetchImages(query, page = 1) {
-  
-    const response = await axios.get('https://pixabay.com/api/', {
-  
-    params: {
-    
-      key: 'your-api-key',
-      
-      q: query,
-      
-      image_type: 'photo',
-      
-      orientation: 'horizontal',
-      
-      safesearch: true,
-      
-      page,
-      
-      per_page: 15,
-    
-    },
-  
-    });
-  
-    return response.data;
-
-    }`
+`async function fetchImages(query, page = 1) {
+const response = await axios.get('https://pixabay.com/api/', {
+params: {
+key: 'your-api-key',
+q: query,
+image_type: 'photo',
+orientation: 'horizontal',
+safesearch: true,
+page,
+per_page: 15,
+},
+});
+return response.data;
+}`
 
 # 🚀 Installation & Setup
 **1. Clone repository:**
