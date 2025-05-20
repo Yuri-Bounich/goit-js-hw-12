@@ -53,7 +53,7 @@ javascript
 
 // API request example
 
-    async function fetchImages(query, page = 1) {
+    `async function fetchImages(query, page = 1) {
   
     const response = await axios.get('https://pixabay.com/api/', {
   
@@ -79,7 +79,7 @@ javascript
   
     return response.data;
 
-    }
+    }`
 
 # 🚀 Installation & Setup
 1. Clone repository:
