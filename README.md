@@ -80,22 +80,18 @@ javascript
   
     return response.data;
 
-   }
+    }
 
 # 🚀 Installation & Setup
 1. Clone repository:
-   
- bash
  
 git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git
 
 3. Install dependencies:
-bash
+
 npm install
 
 4. Run project:
-
-bash
 
 npm run dev
 
