@@ -2,11 +2,12 @@
 # Javascript Project
 
 Image Gallery Project 🖼️
+
 Image gallery with search functionality built using Vite and Pixabay API.
 
 Gallery Example
 
-🛠 Technologies & Tools
+## 🛠 Technologies & Tools
 Build Tool: Vite
 
 HTTP Client: Axios
@@ -21,15 +22,15 @@ Notifications: iziToast
 
 Lightbox: SimpleLightbox
 
-📌 Key Features
-API Implementation
-Integrated with Pixabay public API
+## 📌 Key Features
+### API Implementation
+ - Integrated with Pixabay public API
 
-Implemented pagination (page and per_page parameters)
+ - Implemented pagination (page and per_page parameters)
 
-Selected only necessary properties from response objects
+ - Selected only necessary properties from response objects
 
-UI/UX
+### UI/UX
 Image search by keywords
 
 Smooth scrolling after loading new images
@@ -42,7 +43,7 @@ End of collection notification
 
 Lightbox for enlarged view (SimpleLightbox)
 
-Additional Functionality
+### Additional Functionality
 refresh() method for lightbox updates
 
 Error handling and notifications (iziToast)
