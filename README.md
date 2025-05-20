@@ -1,7 +1,6 @@
-# goit-js-hw-12
 # Javascript Project
 
-Image Gallery Project 🖼️
+## Image Gallery Project 🖼️
 
 Image gallery with search functionality built using Vite and Pixabay API.
 
@@ -87,13 +86,14 @@ javascript
  
 git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git
 
-3. Install dependencies:
+2. Install dependencies:
 
 npm install
 
-4. Run project:
+3. Run project:
 
 npm run dev
+
 
 ## 📩 Contact Information
 
