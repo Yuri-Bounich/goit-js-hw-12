@@ -8,19 +8,19 @@ Image gallery with search functionality built using Vite and Pixabay API.
 Gallery Example
 
 ## 🛠 Technologies & Tools
-Build Tool: Vite
+ - Build Tool: Vite
 
-HTTP Client: Axios
+ - HTTP Client: Axios
 
-Async Code: async/await
+ - Async Code: async/await
 
-Code Formatting: Prettier
+ - Code Formatting: Prettier
 
-Design Mockup: Figma
+ - Design Mockup: Figma
 
-Notifications: iziToast
+ - Notifications: iziToast
 
-Lightbox: SimpleLightbox
+ - Lightbox: SimpleLightbox
 
 ## 📌 Key Features
 ### API Implementation
@@ -31,24 +31,24 @@ Lightbox: SimpleLightbox
  - Selected only necessary properties from response objects
 
 ### UI/UX
-Image search by keywords
+ - Image search by keywords
 
-Smooth scrolling after loading new images
+ - Smooth scrolling after loading new images
 
-Loading indicator
+ - Loading indicator
 
-"Load more" button (hidden until results are received)
+ - "Load more" button (hidden until results are received)
 
-End of collection notification
+ - End of collection notification
 
-Lightbox for enlarged view (SimpleLightbox)
+ - Lightbox for enlarged view (SimpleLightbox)
 
 ### Additional Functionality
-refresh() method for lightbox updates
+ - refresh() method for lightbox updates
 
-Error handling and notifications (iziToast)
+ - Error handling and notifications (iziToast)
 
-💻 Code Samples
+## 💻 Code Samples
 javascript
 // API request example
 async function fetchImages(query, page = 1) {
@@ -65,20 +65,28 @@ async function fetchImages(query, page = 1) {
   });
   return response.data;
 }
-🚀 Installation & Setup
-Clone repository:
+
+# 🚀 Installation & Setup
+1. Clone repository:
+   
 bash
+
 git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git
 
-Install dependencies:
+2. Install dependencies:
+   
 bash
+
 npm install
 
-Run project:
+3. Run project:
+
 bash
+
 npm run dev
 
-📩 Contact Information
+## 📩 Contact Information
+
 For questions or suggestions:
 
 📧 Email: b52ybunich@gmail.com
