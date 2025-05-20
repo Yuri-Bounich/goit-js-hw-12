@@ -71,15 +71,15 @@
 # 🚀 Installation & Setup
 **1. Clone repository:**
  
-git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git
+*git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git*
 
 **2. Install dependencies:**
 
-npm install
+*npm install*
 
 **3. Run project:**
 
-npm run dev
+*npm run dev*
 
 
 ## 📩 Contact Information
