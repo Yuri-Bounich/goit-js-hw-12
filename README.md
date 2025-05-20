@@ -2,7 +2,7 @@
 
 ## Image Gallery Project 🖼️
 
-Image gallery with search functionality built using Vite and Pixabay API.
+**Image gallery with search functionality built using Vite and Pixabay API.**
 
 Gallery Example
 
