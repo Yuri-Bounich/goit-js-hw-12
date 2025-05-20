@@ -4,7 +4,8 @@
 
 **Image gallery with search functionality built using Vite and Pixabay API.**
 
-Gallery Example
+![image](https://github.com/user-attachments/assets/1a1427a7-e440-4955-833d-1671a8f2d840)
+
 
 ## 🛠 Technologies & Tools
  - Build Tool: Vite
