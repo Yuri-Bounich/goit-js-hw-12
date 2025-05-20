@@ -49,7 +49,7 @@ Gallery Example
 
 ## 💻 Code Samples
 
-javascript
+*javascript*
 
 // API request example
 
@@ -82,25 +82,25 @@ javascript
     }`
 
 # 🚀 Installation & Setup
-1. Clone repository:
+**1. Clone repository:**
  
 git clone https://github.com/Yuri-Bounich/goit-js-hw-12.git
 
-2. Install dependencies:
+**2. Install dependencies:**
 
 npm install
 
-3. Run project:
+**3. Run project:**
 
 npm run dev
 
 
 ## 📩 Contact Information
 
-For questions or suggestions:
+*For questions or suggestions:*
 
-📧 Email: b52ybunich@gmail.com
+**📧 Email:** b52ybunich@gmail.com
 
-💼 LinkedIn: Yuri Bounich
+**💼 LinkedIn:** Yuri Bounich
 
-👨💻 GitHub: Yuri-Bounich
+**👨💻 GitHub:** Yuri-Bounich
